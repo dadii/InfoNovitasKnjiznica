@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6955304a37bf45f89b91dcb9b18b8852" Name="Diagram1">
+        <EntityTypeShape EntityType="IdentityExDbModel.Author" Width="1.5" PointX="3" PointY="16" />
+        <EntityTypeShape EntityType="IdentityExDbModel.Book" Width="1.5" PointX="5.25" PointY="14" />
+        <EntityTypeShape EntityType="IdentityExDbModel.Literature" Width="1.5" PointX="5.25" PointY="18.75" />
+        <EntityTypeShape EntityType="IdentityExDbModel.LiteratureItem" Width="1.5" PointX="7.5" PointY="14.625" />
+        <EntityTypeShape EntityType="IdentityExDbModel.Loan" Width="1.5" PointX="5.25" PointY="1.375" />
+        <EntityTypeShape EntityType="IdentityExDbModel.LoanItem" Width="1.5" PointX="7.5" PointY="1.5" />
+        <EntityTypeShape EntityType="IdentityExDbModel.Publisher" Width="1.5" PointX="3" PointY="13.375" />
+        <EntityTypeShape EntityType="IdentityExDbModel.Role" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="IdentityExDbModel.User" Width="1.5" PointX="3" PointY="3.875" />
+        <EntityTypeShape EntityType="IdentityExDbModel.UserClaim" Width="1.5" PointX="5.25" PointY="7" />
+        <EntityTypeShape EntityType="IdentityExDbModel.UserInfo" Width="1.5" PointX="5.25" PointY="9.75" />
+        <EntityTypeShape EntityType="IdentityExDbModel.UserLogin" Width="1.5" PointX="5.25" PointY="4.5" />
+        <EntityTypeShape EntityType="IdentityExDbModel.UserRegistrationToken" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="IdentityExDbModel.FK_Book_Author" />
+        <AssociationConnector Association="IdentityExDbModel.FK_Book_Publisher" />
+        <AssociationConnector Association="IdentityExDbModel.FK_LiteratureItem_Book" />
+        <AssociationConnector Association="IdentityExDbModel.FK_LoanItem_Book" />
+        <AssociationConnector Association="IdentityExDbModel.FK_LiteratureItem_Literature" />
+        <AssociationConnector Association="IdentityExDbModel.FK_Loan_Loan" />
+        <AssociationConnector Association="IdentityExDbModel.FK_Loan_User" />
+        <AssociationConnector Association="IdentityExDbModel.FK_LoanItem_Loan" />
+        <AssociationConnector Association="IdentityExDbModel.FK_UserClaim_User" />
+        <AssociationConnector Association="IdentityExDbModel.FK_UserLogin_User" />
+        <AssociationConnector Association="IdentityExDbModel.Relationship6" />
+        <AssociationConnector Association="IdentityExDbModel.UserRole" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
